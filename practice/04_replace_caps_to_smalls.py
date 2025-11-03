@@ -1,9 +1,15 @@
-input_string = "This is a String with Mixed CASE Letters."
-output_string = input_string.lower()
-print(output_string)  # Output: "this is a string with mixed case letters."
-# The code converts all uppercase letters in the input string to lowercase letters.
-# The code takes an input string and uses the lower() method to convert all uppercase letters to lowercase.
-# Finally, it prints the modified string.
-# Example usage:
-# Input: "This is a String with Mixed CASE Letters."
-# Output: "this is a string with mixed case letters."
+class Solution:
+
+    def __init__(self):
+        pass
+
+    def replace_caps_to_smalls(self, input_string):
+        # Convert all uppercase letters to lowercase
+        return input_string.lower()
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    input_string = "This is a String with Mixed CASE Letters."
+    output_string = solution.replace_caps_to_smalls(input_string)
+    print(output_string)  # Output: "this is a string with mixed case letters."
