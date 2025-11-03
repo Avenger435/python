@@ -1,5 +1,26 @@
 class Solution:
+    """
+    A class containing methods for converting characters to their ASCII codes.
+    """
+
     def replace_chars_with_ASCII(self, input_string: str) -> str:
+        """
+        Replace each character in the input string with its ASCII code.
+
+        This method converts each character to its corresponding ASCII/Unicode
+        code point using the ord() function and joins them with spaces.
+
+        Args:
+            input_string (str): The input string to convert
+
+        Returns:
+            str: A string containing ASCII codes separated by spaces
+
+        Example:
+            >>> solution = Solution()
+            >>> solution.replace_chars_with_ASCII("ABC")
+            '65 66 67'
+        """
         output_list = []
         for char in input_string:
             output_list.append(str(ord(char)))
